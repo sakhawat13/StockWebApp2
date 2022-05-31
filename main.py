@@ -65,7 +65,7 @@ SubOpt = st.multiselect(
      'Which companies would you like?(can chose multiple)',
      (Ind_name))
 
-opt = Ind[SubOpt]
+#opt = Ind[SubOpt]
 
 st.write('You selected:', opt)
 

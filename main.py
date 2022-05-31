@@ -69,7 +69,7 @@ opt = st.multiselect(
 
 st.write("OR")
 
-SubOpt = st.selectbox(
+SubOpt = st.multiselect(
      'Which Industry would you like?(can chose only one)',
      (si_name))
 

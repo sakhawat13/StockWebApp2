@@ -70,12 +70,15 @@ st.write("OR")
 SubOpt = st.multiselect(
      'Which Industry would you like?(can chose only one)',
      (si_name))
-# if st.button('Clear Selection'):
-#      opt = list(())
-#      SubOpt = list(())
 
 if SubOpt:
   opt = list(( si[SubOpt]).dropna().unique())
+
+if st.button('Clear Selection'):
+     opt = list(())
+     SubOpt = list(())
+
+
 
 #opt = Ind[SubOpt]
 

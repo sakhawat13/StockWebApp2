@@ -74,7 +74,7 @@ SubOpt = st.multiselect(
      (si_name))
 
 if SubOpt:
-  opt = list(( si[SubOpt]).dropna().unique())
+  opt = list(( si[SubOpt[0]]).dropna().unique())
   SubOpt = list(())
 
 if st.button('Clear Selection'):

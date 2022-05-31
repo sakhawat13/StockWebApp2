@@ -43,7 +43,8 @@ import investpy
 
 
 # In[6]:
-
+Ind = pd.read_excel('StockIndustry.xlsx', index_col=0)
+Ind_name = Ind.columns.values.tolist()
 
 stock_df = investpy.get_stocks_overview(country="Bangladesh", 
                         as_json=False, 
@@ -59,10 +60,13 @@ option = list(( stock_df["name"]).unique())
 opt = st.multiselect(
      'Which companies would you like?(can chose multiple)',
      (option))
-all_options = st.checkbox("Select all options")
 
-if all_options:
-    opt = option
+SubOpt = st.multiselect(
+     'Which companies would you like?(can chose multiple)',
+     (Ind_name))
+
+If SubOpt:
+  opt = Ind[SubOpt]
 
 st.write('You selected:', opt)
 

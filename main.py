@@ -65,6 +65,9 @@ SubOpt = st.multiselect(
      'Which companies would you like?(can chose multiple)',
      (si_name))
 
+if SubOpt:
+  opt = si[SubOpt]
+
 #opt = Ind[SubOpt]
 
 st.write('You selected:', opt)

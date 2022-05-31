@@ -66,7 +66,7 @@ SubOpt = st.multiselect(
      (si_name))
 
 if SubOpt:
-  opt = si[SubOpt].tolist()
+  opt = list(si[SubOpt])
 
 #opt = Ind[SubOpt]
 

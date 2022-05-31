@@ -66,7 +66,7 @@ SubOpt = st.selectbox(
      (si_name))
 
 if SubOpt:
-  opt = list(( si[SubOpt]).unique())
+  opt = list(( si[SubOpt]).dropna().unique())
 
 #opt = Ind[SubOpt]
 

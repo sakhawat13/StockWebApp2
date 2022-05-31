@@ -61,12 +61,12 @@ opt = st.multiselect(
      'Which companies would you like?(can chose multiple)',
      (option))
 
-SubOpt = st.multiselect(
+SubOpt = st.selectbox(
      'Which companies would you like?(can chose multiple)',
      (si_name))
 
 if SubOpt:
-  opt = si[SubOpt]
+  opt = list(( si[SubOpt]).unique())
 
 #opt = Ind[SubOpt]
 

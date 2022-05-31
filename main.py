@@ -57,12 +57,18 @@ stock_df = investpy.get_stocks_overview(country="Bangladesh",
 
 option = list(( stock_df["name"]).unique())
 
+st.header("Only Use One of the Dropbox")
+st.subheader("Clear selection before reusing")
+st.caption("Some selected value might still show but wont be a problem, you can reselect like normal")
+
 opt = st.multiselect(
      'Which companies would you like?(can chose multiple)',
      (option))
 
+st.write("OR")
+
 SubOpt = st.selectbox(
-     'Which companies would you like?(can chose multiple)',
+     'Which Industry would you like?(can chose only one)',
      (si_name))
 if st.button('Clear Selection'):
      opt = list(())

@@ -57,6 +57,8 @@ stock_df = investpy.get_stocks_overview(country="Bangladesh",
 
 option = list(( stock_df["name"]).unique())
 
+SubOpt = list(())
+
 st.header("Only Use One of the Dropbox")
 st.subheader("Cross out previous selection before reusing")
 #st.caption("Some selected value might still show but wont be a problem, you can reselect like normal")

@@ -77,9 +77,9 @@ if SubOpt:
   opt = list(( si[SubOpt[0]]).dropna().unique())
   SubOpt = list(())
 
-if st.button('Clear Selection'):
-     opt = list(())
-     SubOpt = list(())
+# if st.button('Clear Selection'):
+#      opt = list(())
+#      SubOpt = list(())
 
 
 

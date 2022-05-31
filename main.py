@@ -66,6 +66,7 @@ SubOpt = st.selectbox(
      (si_name))
 if st.button('Clear Selection'):
      opt = list(())
+     SubOpt = list(())
 
 if SubOpt:
   opt = list(( si[SubOpt]).dropna().unique())

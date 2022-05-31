@@ -57,7 +57,7 @@ stock_df = investpy.get_stocks_overview(country="Bangladesh",
 
 option = list(( stock_df["name"]).unique())
 
-SubOpt = list(())
+
 
 st.header("Only Use One of the Dropbox")
 st.subheader("Cross out previous selection before reusing")
@@ -75,6 +75,7 @@ SubOpt = st.selectbox(
 
 if SubOpt:
   opt = list(( si[SubOpt]).dropna().unique())
+  SubOpt = list(())
 
 if st.button('Clear Selection'):
      opt = list(())

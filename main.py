@@ -64,6 +64,8 @@ opt = st.multiselect(
 SubOpt = st.selectbox(
      'Which companies would you like?(can chose multiple)',
      (si_name))
+if st.button('Clear Selection'):
+     opt = list(())
 
 if SubOpt:
   opt = list(( si[SubOpt]).dropna().unique())
